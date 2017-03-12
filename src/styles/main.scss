@@ -68,6 +68,34 @@ body {
   }
 }
 
+.nav {
+  background: $main;
+  height: 70px;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 23px;
+    &:hover {
+      color: #ddd;
+      background: $sec;
+    }
+  } 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .content {
   z-index: 1;
   text-align: center;

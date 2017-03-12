@@ -2,28 +2,18 @@
   <div class="user-details">
     <h3> Blog </h3>
   </div>
-  <div class="row user-blog">
-    <div class="six columns images">
-      <img alt="mssql" src="{{ "/assets/img/mssql.jpg" | prepend: site.baseurl }}" />
+  {% for post in site.posts %}
+    <div class="row user-blog">
+      <div class="six columns images">
+        <img alt="post image" src="{{post.image}}" />
+      </div>
+      
+      <div class="six columns">
+        <h5>{{ post.title }}</h5>
+        <li>{{ post.subtitle }}</li>
+        <p>{{ post.description }}</p>
+        <a class="blog-link" href="{{post.url}}">Check it out</a>
+      </div>
     </div>
-    <div class="six columns">
-      <h5> Work with Symfony3	&amp; MSSQL </h5>
-      <li> Configuration done right</li>
-      <p>Working with PHP, Windows and Microsoft SQL Server can be a pain in the ass. Recently I had to experience this by myself and I want to share my knowledge with you.</p>
-      <a class="blog-link" href="#">Check it out</a>
-    </div>
-  </div>
-  <div class="row user-blog">
-    <div class="six columns">
-      <img alt="mountains" src="{{ "/assets/img/macbook.jpg" | prepend: site.baseurl }}" />
-    </div>
-    <div class="six columns">
-      <h5> Introduction </h5>
-      <ul>
-        <li> Why I created this blog</li>
-      </ul>
-      <p>I´m just a normal developer and I want to share things I learned the hard way with you. In this article I will show you my Setup and Configurations for my Tools</p>
-      <a class="blog-link" href="#">Check it out</a>
-    </div>
-  </div>
+  {% endfor %}
 </div>

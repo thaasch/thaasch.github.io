@@ -13,8 +13,14 @@ twitter_username: timow_h
 github_username:  thaasch
 gplus_username:  110006640396769855675
 
+gems:
+    - jekyll-admin
+
 # Google-analytics
 google-analytics:
   id: "UA-66405697-2"
 
 exclude: ['package.json', 'src' , 'node_modules']
+
+# Build settings
+markdown: kramdown
