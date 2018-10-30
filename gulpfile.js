@@ -8,7 +8,7 @@ var cp = require('child_process');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
 
-var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
+var jekyllCommand = (/^win/i.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
 
 /*
  * Build the Jekyll Site
