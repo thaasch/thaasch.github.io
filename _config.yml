@@ -1,7 +1,7 @@
 # Site settings
 title: Timo´s Dev Blog
 description: A blog about Symfony and Web Stuff
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
@@ -9,7 +9,7 @@ username: Timo Haasch
 user_description: Hello everyone! I´m Timo, a 27 years old german PHP Software Developer. I live in the small town called Paderborn and do Web stuff for 4 years now.
 user_title: Software Developer
 email: timo.haasch@gmail.com
-twitter_username: timow_h
+twitter_username: nosco
 github_username:  thaasch
 gplus_username:  110006640396769855675
 
